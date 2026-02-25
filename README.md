@@ -345,6 +345,18 @@ Once running, visit:
 | `feature/frontend`              | Next.js frontend application                   |
 | `feature/devops`                | Docker, CI/CD, deployment configs              |
 
+### Creating all branches
+
+After merging this PR into `main`, a repo maintainer can seed all branches at once:
+
+```bash
+# From the repository root (after cloning):
+chmod +x scripts/create-branches.sh
+./scripts/create-branches.sh
+```
+
+This will create all branches listed above and push them to `origin`, skipping any that already exist.
+
 ---
 
 ## Troubleshooting
